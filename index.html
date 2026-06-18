@@ -1,21 +1,557 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AWAG Leadership — Train. Strengthen. Connect.</title>
-    <meta name="description" content="Americans Working Around the Globe (AWAG) empowers, trains, and connects volunteers and leaders across the U.S. military community in Europe and beyond. 80 years of leadership development." />
-    <meta name="author" content="AWAG Leadership" />
-    <meta property="og:title" content="AWAG Leadership — Train. Strengthen. Connect." />
-    <meta property="og:description" content="Empowering, training, and connecting volunteer leaders in the U.S. military community for 80 years." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWAG Leadership — Train. Strengthen. Connect.</title>
+  <meta name="description" content="Americans Working Around the Globe (AWAG) empowers, trains, and connects volunteers and leaders across the U.S. military community in Europe and beyond. 80 years of leadership development." />
+  <meta name="author" content="AWAG Leadership" />
+  <meta property="og:title" content="AWAG Leadership — Train. Strengthen. Connect." />
+  <meta property="og:description" content="Empowering, training, and connecting volunteer leaders in the U.S. military community for 80 years." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body id="top">
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner" aria-label="Primary">
+      <a href="#top" class="brand">
+        <img src="assets/images/logo.png" alt="AWAG Leadership" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-kicker">AWAG</span>
+          <span class="brand-title">Leadership</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#pillars">Mission</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#involved">Get Involved</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="#involved" class="nav-join">Join Us</a>
+        <a href="#donate" class="btn btn-red btn-sm">Donate <span class="arrow">↗</span></a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#pillars">Mission</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#involved">Get Involved</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-cta">
+        <a href="#involved" class="btn btn-outline-navy">Join Us</a>
+        <a href="#donate" class="btn btn-red">Donate</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/images/hero.jpg" alt="" aria-hidden="true" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-floater hero-floater-red"></div>
+    <div class="hero-floater hero-floater-blue"></div>
+
+    <div class="hero-inner container">
+      <div class="badge glass-dark reveal">
+        <span class="badge-dot"></span>
+        80 Years of Service · Est. 1946
+      </div>
+
+      <h1 class="hero-title reveal">
+        Leadership that
+        <span class="hero-underline">moves nations.</span><br />
+        <span class="hero-muted">Built for those who serve.</span>
+      </h1>
+
+      <p class="hero-sub reveal">
+        Americans Working Around the Globe empowers, trains, and connects
+        volunteer leaders across the U.S. military community in Europe and
+        beyond — equipping people like you to lead with confidence, purpose,
+        and impact.
+      </p>
+
+      <div class="hero-ctas reveal">
+        <a href="#programs" class="btn btn-white">Explore Our Programs <span class="arrow">→</span></a>
+        <a href="#involved" class="btn btn-ghost-light">Join the Movement <span class="arrow">↗</span></a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="hero-stat glass-dark"><div class="hero-stat-value">10K+</div><div class="hero-stat-label">Leaders trained</div></div>
+        <div class="hero-stat glass-dark"><div class="hero-stat-value">80</div><div class="hero-stat-label">Years of service</div></div>
+        <div class="hero-stat glass-dark"><div class="hero-stat-value">15+</div><div class="hero-stat-label">Areas represented</div></div>
+        <div class="hero-stat glass-dark"><div class="hero-stat-value">70</div><div class="hero-stat-label">Annual seminars</div></div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="chevron">⌄</div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <section class="marquee-section">
+    <div class="container marquee-wrap">
+      <span class="marquee-label">Trusted across the community</span>
+      <div class="marquee">
+        <div class="marquee-track" id="marqueeTrack">
+          <span>U.S. Army Garrison Communities</span>
+          <span>USAFE-AFAFRICA</span>
+          <span>Edelweiss Lodge &amp; Resort</span>
+          <span>Military Spouse Networks</span>
+          <span>Department of Defense Civilians</span>
+          <span>Veteran Leadership Alliances</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PILLARS ============ -->
+  <section id="pillars" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Our Mission</span>
+        <h2>Three pillars. One purpose.</h2>
+        <p>For 80 years, AWAG has trained, strengthened, and connected leaders across the U.S. military community worldwide.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <article class="pillar-card reveal">
+          <div class="pillar-image">
+            <img src="assets/images/train.jpg" alt="" loading="lazy" />
+            <div class="pillar-image-overlay"></div>
+            <div class="pillar-icon">🎓</div>
+            <h3>Train</h3>
+          </div>
+          <div class="pillar-body">
+            <p>Comprehensive professional and personal development seminars designed to build strong, effective leaders. We believe that strong training transforms potential into purpose-driven leadership.</p>
+            <a href="#programs" class="link-arrow">Learn more <span class="arrow">→</span></a>
+          </div>
+        </article>
+
+        <article class="pillar-card reveal">
+          <div class="pillar-image">
+            <img src="assets/images/strengthen.jpg" alt="" loading="lazy" />
+            <div class="pillar-image-overlay"></div>
+            <div class="pillar-icon">🛡️</div>
+            <h3>Strengthen</h3>
+          </div>
+          <div class="pillar-body">
+            <p>Initiatives focused on resilience — empowering leaders to adapt, innovate, and thrive in an ever-changing world. AWAG equips you to stand strong for yourself, your team, and your community.</p>
+            <a href="#programs" class="link-arrow">Learn more <span class="arrow">→</span></a>
+          </div>
+        </article>
+
+        <article class="pillar-card reveal">
+          <div class="pillar-image">
+            <img src="assets/images/connect.jpg" alt="" loading="lazy" />
+            <div class="pillar-image-overlay"></div>
+            <div class="pillar-icon">🤝</div>
+            <h3>Connect</h3>
+          </div>
+          <div class="pillar-body">
+            <p>Networking, mentorship, and events that bring leaders together to inspire, challenge, and support one another. We create spaces where lasting relationships are forged.</p>
+            <a href="#programs" class="link-arrow">Learn more <span class="arrow">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section section-muted">
+    <div class="container about-grid">
+      <div class="reveal">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>About AWAG</span>
+        <h2 class="section-title">
+          A nonprofit forged from service —
+          <span class="text-red">dedicated to those who serve.</span>
+        </h2>
+        <div class="about-text">
+          <p>Americans Working Around the Globe (AWAG) is a 501(c)(3) nonprofit organization that trains, strengthens, and connects leaders in military communities around the globe.</p>
+          <p>We achieve this through leadership and professional development seminars for Americans living and working overseas. Founded in 1946, AWAG has spread throughout Germany and across Europe — growing and changing as our community changes.</p>
+          <p>Our Area Seminars and our four-day Annual Seminar provide a forum where spouses, service members, civilians, and retirees share ideas, develop skills, and lead with purpose wherever they're stationed.</p>
+        </div>
+
+        <div class="about-badges">
+          <div class="about-badge"><div class="about-badge-icon">🏆</div><div class="about-badge-label">501(c)(3) Nonprofit</div></div>
+          <div class="about-badge"><div class="about-badge-icon">🌍</div><div class="about-badge-label">Europe &amp; Beyond</div></div>
+          <div class="about-badge"><div class="about-badge-icon">🏛️</div><div class="about-badge-label">Founded 1946</div></div>
+        </div>
+      </div>
+
+      <div class="reveal about-image-wrap">
+        <div class="about-image">
+          <img src="assets/images/community.jpg" alt="AWAG community" loading="lazy" />
+          <div class="about-image-caption">
+            <div class="caption-kicker">✦ Train. Strengthen. Connect.</div>
+            <p>"We believe leadership is about making a difference — wherever you serve."</p>
+          </div>
+        </div>
+        <div class="float-card float-card-tl">
+          <div class="float-card-value"><span class="counter" data-to="80">0</span>+</div>
+          <div class="float-card-label">Years of service</div>
+        </div>
+        <div class="float-card float-card-br">
+          <div class="float-card-value text-red"><span class="counter" data-to="10000">0</span>+</div>
+          <div class="float-card-label">Leaders trained</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAMS ============ -->
+  <section id="programs" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Our Programs</span>
+        <h2>Where leaders gather, grow, and lead.</h2>
+        <p>From one-day regional events to our flagship four-day seminar, AWAG creates the forums where the next generation of military-community leaders is built.</p>
+      </div>
+
+      <div class="programs-grid">
+        <article class="program-card reveal">
+          <div class="program-image">
+            <img src="assets/images/gallery1.jpg" alt="" loading="lazy" />
+            <div class="program-image-overlay"></div>
+            <span class="program-tag">Regional</span>
+          </div>
+          <div class="program-body">
+            <h3>Area Seminars</h3>
+            <div class="program-meta">
+              <span>📅 September – December</span>
+              <span>📍 Across Europe</span>
+            </div>
+            <p>One-day leadership and professional development events held each fall across our regional communities. Each Area Seminar is unique to its region — speakers and topics curated to benefit the local community.</p>
+            <a href="#contact" class="btn btn-navy">RSVP for an Area Seminar <span class="arrow">→</span></a>
+          </div>
+        </article>
+
+        <article class="program-card program-card-accent reveal">
+          <div class="program-image">
+            <img src="assets/images/gallery3.jpg" alt="" loading="lazy" />
+            <div class="program-image-overlay program-image-overlay-dark"></div>
+            <span class="program-tag">Flagship</span>
+          </div>
+          <div class="program-body">
+            <h3>Annual Seminar</h3>
+            <div class="program-meta">
+              <span>📅 April 25–29, 2027</span>
+              <span>📍 Edelweiss Lodge &amp; Resort, Garmisch</span>
+            </div>
+            <p>Open to U.S.-affiliated military, contractors, civilians, and spouses, AWAG's four-day seminar in Garmisch brings together leaders from across Europe for an unforgettable, transformational experience.</p>
+            <a href="#contact" class="btn btn-white">RSVP for Annual Seminar <span class="arrow">→</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="programs-cta reveal">
+        <div>
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Expanding Our Footprint</span>
+          <h3>Don't see your area represented? Let's build it together.</h3>
+          <p>We are always looking to expand our service footprint to new communities, garrisons, and bases worldwide.</p>
+        </div>
+        <a href="#contact" class="btn btn-navy">Get in touch <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IMPACT ============ -->
+  <section id="impact" class="section section-navy">
+    <div class="impact-glow"></div>
+    <div class="container">
+      <div class="section-header reveal section-header-light">
+        <span class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span>Our Impact</span>
+        <h2>Eight decades of impact — <span class="muted-light">measured in lives changed.</span></h2>
+        <p>See the difference we're making in military communities around the world.</p>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-cell reveal"><div class="impact-value"><span class="counter" data-to="10000">0</span>+</div><div class="impact-label">Leaders trained</div></div>
+        <div class="impact-cell reveal"><div class="impact-value"><span class="counter" data-to="80">0</span></div><div class="impact-label">Years of service</div></div>
+        <div class="impact-cell reveal"><div class="impact-value"><span class="counter" data-to="70">0</span>+</div><div class="impact-label">Annual seminars</div></div>
+        <div class="impact-cell reveal"><div class="impact-value"><span class="counter" data-to="15">0</span>+</div><div class="impact-label">Areas represented</div></div>
+        <div class="impact-cell reveal"><div class="impact-value"><span class="counter" data-to="25">0</span>+</div><div class="impact-label">Partners &amp; contributors</div></div>
+        <div class="impact-cell reveal"><div class="impact-value"><span class="counter" data-to="200">0</span>+</div><div class="impact-label">Scholarships awarded</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Voices from the Community</span>
+        <h2>What leaders say about AWAG.</h2>
+        <p>Stories from spouses, service members, civilians, and retirees whose leadership journeys were shaped by AWAG.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <figure class="testimonial reveal">
+          <div class="quote-mark">"</div>
+          <blockquote>"AWAG gave me the confidence and the community I needed to lead well in an unfamiliar place. The connections I made still shape how I serve today."</blockquote>
+          <figcaption>
+            <div class="avatar">MS</div>
+            <div><div class="t-name">Military Spouse</div><div class="t-role">Annual Seminar Alumna</div></div>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial reveal">
+          <div class="quote-mark">"</div>
+          <blockquote>"The training is world-class — practical, transformative, and grounded in service. AWAG's impact on our garrison is impossible to overstate."</blockquote>
+          <figcaption>
+            <div class="avatar">GV</div>
+            <div><div class="t-name">Garrison Volunteer Leader</div><div class="t-role">Germany</div></div>
+          </figcaption>
+        </figure>
+
+        <figure class="testimonial reveal">
+          <div class="quote-mark">"</div>
+          <blockquote>"Walking into AWAG, I expected a seminar. I left with mentors, a network across Europe, and a clearer sense of purpose."</blockquote>
+          <figcaption>
+            <div class="avatar">DC</div>
+            <div><div class="t-name">Department of Defense Civilian</div><div class="t-role">Area Seminar Participant</div></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Gallery</span>
+        <h2>Moments from the movement.</h2>
+        <p>Glimpses from seminars, gatherings, and the people who make AWAG what it is.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-tall reveal"><img src="assets/images/gallery1.jpg" alt="" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="assets/images/gallery2.jpg" alt="" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="assets/images/gallery4.jpg" alt="" loading="lazy" /></div>
+        <div class="gallery-item gallery-tall reveal"><img src="assets/images/gallery3.jpg" alt="" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="assets/images/community.jpg" alt="" loading="lazy" /></div>
+        <div class="gallery-item reveal"><img src="assets/images/train.jpg" alt="" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GET INVOLVED ============ -->
+  <section id="involved" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Get Involved</span>
+        <h2>AWAG thrives because of people like you.</h2>
+        <p>Explore the many ways you can be part of our mission — from volunteering to sponsoring.</p>
+      </div>
+
+      <div class="involved-grid">
+        <a href="#contact" class="involved-card reveal">
+          <div class="involved-icon">👥</div>
+          <h3>Volunteer with AWAG</h3>
+          <p>Become a key part of our programs at the local, annual, or board level.</p>
+          <span class="involved-cta">Learn more <span class="arrow">→</span></span>
+        </a>
+        <a href="#contact" class="involved-card reveal">
+          <div class="involved-icon">🎤</div>
+          <h3>Speak or Facilitate</h3>
+          <p>Share your knowledge at our Annual Seminar or a regional Area Seminar.</p>
+          <span class="involved-cta">Become a speaker <span class="arrow">→</span></span>
+        </a>
+        <a href="#contact" class="involved-card reveal">
+          <div class="involved-icon">🤝</div>
+          <h3>Sponsor or Partner</h3>
+          <p>Support AWAG through financial contributions or strategic collaboration.</p>
+          <span class="involved-cta">Work with us <span class="arrow">→</span></span>
+        </a>
+        <a href="#contact" class="involved-card reveal">
+          <div class="involved-icon">🎁</div>
+          <h3>Ways to Contribute</h3>
+          <p>Every gift helps us reach more volunteers and expand our impact.</p>
+          <span class="involved-cta">Give today <span class="arrow">→</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DONATE ============ -->
+  <section id="donate" class="donate-section">
+    <div class="container">
+      <div class="donate-card reveal">
+        <div class="donate-glow donate-glow-red"></div>
+        <div class="donate-glow donate-glow-blue"></div>
+        <div class="donate-inner">
+          <div>
+            <span class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span>Support our cause</span>
+            <h2>Help us train the next generation of leaders abroad.</h2>
+            <p>Your gift directly supports scholarships, seminars, and the volunteer leaders who build stronger communities for those who serve.</p>
+          </div>
+          <div class="donate-ctas">
+            <a href="#contact" class="btn btn-red">Donate Now <span class="arrow">↗</span></a>
+            <a href="#involved" class="btn btn-ghost-light">Other ways to give</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section-muted">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <span class="eyebrow"><span class="eyebrow-dot"></span>Contact</span>
+        <h2 class="section-title">Let's build leaders, together.</h2>
+        <p class="lede">Whether you want to volunteer, speak at a seminar, partner with us, or bring AWAG to your community — we'd love to hear from you.</p>
+
+        <div class="contact-list">
+          <a href="mailto:info@awagleadership.org" class="contact-row">
+            <span class="contact-icon">✉</span>
+            <span>info@awagleadership.org</span>
+          </a>
+          <a href="https://www.awagleadership.org" class="contact-row">
+            <span class="contact-icon">🌐</span>
+            <span>awagleadership.org</span>
+          </a>
+          <div class="contact-row">
+            <span class="contact-icon">📍</span>
+            <span>Serving U.S. military communities across Europe &amp; beyond</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="first">First name <span class="req">*</span></label>
+            <input id="first" name="first" type="text" required />
+          </div>
+          <div class="field">
+            <label for="last">Last name <span class="req">*</span></label>
+            <input id="last" name="last" type="text" required />
+          </div>
+          <div class="field field-full">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field field-full">
+            <label for="org">Organization or unit</label>
+            <input id="org" name="org" type="text" />
+          </div>
+          <div class="field field-full">
+            <label>I'm interested in</label>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" value="Area Seminars" /><span>Area Seminars</span></label>
+              <label class="chip"><input type="checkbox" value="Annual Seminar" /><span>Annual Seminar</span></label>
+              <label class="chip"><input type="checkbox" value="Volunteering" /><span>Volunteering</span></label>
+              <label class="chip"><input type="checkbox" value="Speaking" /><span>Speaking</span></label>
+              <label class="chip"><input type="checkbox" value="Sponsorship" /><span>Sponsorship</span></label>
+              <label class="chip"><input type="checkbox" value="Donating" /><span>Donating</span></label>
+            </div>
+          </div>
+          <div class="field field-full">
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us a bit about how you'd like to get involved…"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-navy btn-block">Send message <span class="arrow">→</span></button>
+        <p class="form-note">By submitting, you agree to be contacted by AWAG Leadership about your inquiry.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand brand-footer">
+            <img src="assets/images/logo.png" alt="AWAG" class="brand-logo" />
+            <div class="brand-text">
+              <span class="brand-kicker">AWAG</span>
+              <span class="brand-title">Leadership</span>
+            </div>
+          </div>
+          <p class="footer-blurb">Americans Working Around the Globe is a 501(c)(3) nonprofit that trains, strengthens, and connects leaders in U.S. military communities worldwide. Founded 1946.</p>
+          <div class="footer-socials">
+            <a href="https://linkedin.com/company/awagleadership" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://www.facebook.com/AWAGLeadership/" target="_blank" rel="noreferrer" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/awagleadership/" target="_blank" rel="noreferrer" aria-label="Instagram">◎</a>
+            <a href="https://www.youtube.com/@AWAGleadership" target="_blank" rel="noreferrer" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Organization</h4>
+          <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#pillars">Mission</a></li>
+            <li><a href="#impact">Impact</a></li>
+            <li><a href="#about">Leadership</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#programs">Area Seminars</a></li>
+            <li><a href="#programs">Annual Seminar</a></li>
+            <li><a href="#impact">Scholarships</a></li>
+            <li><a href="#involved">Volunteer</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <ul>
+            <li><a href="#involved">Become a Speaker</a></li>
+            <li><a href="#involved">Sponsor &amp; Partner</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-attribution">
+        <p>
+          This website concept was created independently as a demonstration of what a modern AWAG website could look like.
+          It is not affiliated with AWAG and was built solely to showcase a possible redesign.
+          If the AWAG team would like to discuss adopting this design, I'd be delighted to hear from you.
+          For more information, please visit
+          <a href="http://skryia.com/" target="_blank" rel="noreferrer">skryia.com</a>.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Americans Working Around the Globe. 501(c)(3) nonprofit. All rights reserved.</p>
+        <p>🛡 Train. Strengthen. Connect.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
