@@ -308,7 +308,26 @@ export function Footer() {
           />
         </div>
 
-        <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center">
+        {/* Attribution */}
+        <div className="mt-12 rounded-2xl border border-white/10 bg-[#162b52]/60 p-6 text-center backdrop-blur-sm sm:p-8">
+          <p className="mx-auto max-w-3xl text-sm leading-relaxed text-white/70">
+            This website concept was created independently as a demonstration of what a modern AWAG website could look like.
+            It is not affiliated with AWAG and was built solely to showcase a possible redesign.
+            If the AWAG team would like to discuss adopting this design, I'd be delighted to hear from you.
+            For more information, please visit{" "}
+            <a
+              href="http://skryia.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-white/90 underline underline-offset-2 transition-colors hover:text-white"
+            >
+              skryia.com
+            </a>
+            .
+          </p>
+        </div>
+
+        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center">
           <p className="text-xs text-white/50">
             © {new Date().getFullYear()} Americans Working Around the Globe. 501(c)(3) nonprofit. All rights reserved.
           </p>
