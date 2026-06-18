@@ -3,8 +3,8 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "bunx --bun serve -l 8080 .",
-    "start": "bunx --bun serve -l 8080 .",
+    "dev": "bun serve.mjs",
+    "start": "bun serve.mjs",
     "build": "echo 'No build step — static site' && exit 0"
   }
 }
