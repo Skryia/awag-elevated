@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import {
@@ -40,25 +39,7 @@ import gallery2 from "@/assets/gallery2.jpg";
 import gallery3 from "@/assets/gallery3.jpg";
 import gallery4 from "@/assets/gallery4.jpg";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "AWAG Leadership — Train. Strengthen. Connect." },
-      {
-        name: "description",
-        content:
-          "Americans Working Around the Globe empowers, trains, and connects volunteer leaders across the U.S. military community in Europe and beyond. 80 years of leadership development.",
-      },
-      { property: "og:title", content: "AWAG Leadership — Train. Strengthen. Connect." },
-      {
-        property: "og:description",
-        content:
-          "80 years of training, strengthening, and connecting volunteer leaders in the U.S. military community.",
-      },
-    ],
-  }),
-  component: Home,
-});
+export default function App() { return <Home />; }
 
 function Home() {
   return (
