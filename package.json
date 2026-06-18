@@ -1,0 +1,10 @@
+{
+  "name": "awag-leadership-static",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bunx --bun serve -l 8080 .",
+    "start": "bunx --bun serve -l 8080 .",
+    "build": "echo 'No build step — static site' && exit 0"
+  }
+}
